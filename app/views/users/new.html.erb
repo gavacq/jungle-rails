@@ -9,3 +9,56 @@
   <%= f.submit "Submit" %>
 
 <% end %>
+
+<section>
+
+  <header class="page-header">
+    <h1>Signup</h1>
+  </header>
+
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-1">
+      <%= form_for @user do |form| %>
+
+        <% if form.object.errors.any? %>
+          <div class="alert alert-danger">
+            <strong>The following errors prevented saving:</strong>
+            <ul>
+              <% form.object.errors.full_messages.each do |error| %>
+                <li><%= error %></li>
+              <% end %>
+            </ul>
+          </div>
+        <% end %>
+
+        <div class="form-group">
+          <%= form.label :first_name %>
+          <%= form.text_field :first_name, class: 'form-control' %>
+        </div>
+
+        <div class="form-group">
+          <%= form.label :last_name %>
+          <%= form.text_area :last_name, class: 'form-control' %>
+        </div>
+
+        <div class="form-group">
+          <%= form.label :email %>
+          <%= form.text_area :email, class: 'form-control' %>
+        </div>
+
+        <div class="form-group">
+          <%= form.label :password %>
+          <%= form.number_field :password, class: 'form-control' %>
+        </div>
+
+        <div class="form-group">
+          <%= form.label :password_confirmation %>
+          <%= form.text_field :password_confirmation, class: 'form-control' %>
+        </div>
+
+        <%= form.submit 'Signup', class: 'btn btn-primary' %>
+      <% end %>
+    </div>
+  </div>
+
+</section>

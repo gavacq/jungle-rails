@@ -12,6 +12,9 @@ Rails.application.routes.draw do
 
   resources :orders, only: [:create, :show]
 
+  resources :users, only: [:new, :create]
+  get "signup", to: "users#new"
+
   get "about", to: "about#index" 
 
   namespace :admin do

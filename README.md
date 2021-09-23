@@ -2,6 +2,12 @@
 
 A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
 
+
+<img src="https://github.com/geecrypt/jungle-rails/blob/master/docs/desktop-home.png" alt="urls" width="800">
+<img src="https://github.com/geecrypt/jungle-rails/blob/master/docs/desktop-product.png" alt="urls" width="800">
+<img src="https://github.com/geecrypt/jungle-rails/blob/master/docs/desktop-cart.png" alt="urls" width="800">
+<img src="https://github.com/geecrypt/jungle-rails/blob/master/docs/desktop-admin-products.png" alt="urls" width="800">
+
 ## Additional Steps for Apple M1 Machines
 
 1. Make sure that you are runnning Ruby 2.6.6 (`ruby -v`)
